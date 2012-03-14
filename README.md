@@ -28,5 +28,22 @@ git submodule update
 ln -s ~/.vim/autoload/vim-pathogen/autoload/pathogen.vim ~/.vim/autoload/pathogen.vim
 
 # symlink the rc file into your home directory
-ln -s ~/.vim/vimrc .vimrc
+ln -s ~/.vim/vimrc ~/.vimrc
+```
+
+Remove (At your own risk!)
+--------------------------
+
+Make sure you have the `~/.vim-bak` folder and the `~/.vimrc-bak` file. If you do then you can continue.
+
+```sh
+# remove the ~/.vim folder
+rm -rf ~/.vim
+
+# remove the ~/.vimrc file
+rm ~/.vimrc
+
+# restore the old ~/.vim and ~/.vimrc
+mv ~/.vim-bak ~/.vim
+mv ~/.vimrc-bak ~/.vimrc
 ```

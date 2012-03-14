@@ -13,14 +13,16 @@ Instructions
 ------------
 ```sh
 # remember to backup your old vim directory/settings
-mv ~/.vim ~/.vim-bak | mv ~/.vimrc ~/.vimrc-bak
+mv ~/.vim ~/.vim-bak
+mv ~/.vimrc ~/.vimrc-bak
 
 # grab the repo
 git clone git://github.com/joshbenham/dotvim ~/.vim
 
 # pull down the submodule files
 cd ~/.vim
-git submodule init | git submodule update
+git submodule init
+git submodule update
 
 # symlink the pathogen vim file from the submodule to a level lower
 ln -s ~/.vim/autoload/vim-pathogen/autoload/pathogen.vim ~/.vim/autoload/pathogen.vim

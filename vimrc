@@ -19,6 +19,8 @@ set nowrap
 set mouse=a
 
 " Tab settings
+vnoremap < <gv
+vnoremap > >gv
 autocmd Filetype ruby setlocal et ts=2 sts=2 sw=2 expandtab
 autocmd Filetype php setlocal ts=2 sts=2 sw=2 noexpandtab
 autocmd FileType python setlocal ts=4 sts=4 sw=4 noexpandtab

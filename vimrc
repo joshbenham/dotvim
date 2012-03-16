@@ -30,8 +30,8 @@ autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 noexpandtab
 set laststatus=2
 
 " Leader of '\' is too far from home row.
-let mapleader = ";"
-let g:mapleader = ";"
+let mapleader = ","
+let g:mapleader = ","
 
 " ctrlp.vim
 let g:ctrlp_max_height = 16
@@ -49,3 +49,5 @@ set pastetoggle=<F6>
 noremap <F1> :set nonumber!<CR>
 noremap <F2> :set mouse=<CR>
 noremap <F3> :set mouse=a<CR>
+
+noremap <leader>s :SyntasticCheck<CR>

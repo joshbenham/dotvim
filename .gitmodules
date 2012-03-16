@@ -10,3 +10,6 @@
 [submodule "autoload/vim-pathogen"]
 	path = autoload/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git

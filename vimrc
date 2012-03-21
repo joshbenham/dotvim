@@ -54,4 +54,3 @@ noremap <F3> :set mouse=a<CR>
 nmap <F5> :source ~/.vimrc<CR>
 
 noremap <leader>s :SyntasticCheck<CR>
-nnoremap <LeftMouse> i

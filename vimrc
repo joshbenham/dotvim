@@ -51,7 +51,7 @@ set pastetoggle=<F6>
 noremap <F1> :set nonumber!<CR>
 noremap <F2> :set mouse=<CR>
 noremap <F3> :set mouse=a<CR>
-nmap <F5> source ~/.vimrc
+nmap <F5> :source ~/.vimrc<CR>
 
 noremap <leader>s :SyntasticCheck<CR>
 nnoremap <LeftMouse> i

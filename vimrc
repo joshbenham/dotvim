@@ -53,4 +53,7 @@ noremap <F2> :set mouse=<CR>
 noremap <F3> :set mouse=a<CR>
 nmap <F5> :source ~/.vimrc<CR>
 
+noremap <leader>p :CtrlP<CR>
+noremap <leader>o :CtrlPBuffer<CR>
+
 noremap <leader>s :SyntasticCheck<CR>

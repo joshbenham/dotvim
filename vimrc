@@ -40,6 +40,12 @@ let g:ctrlp_max_height = 16
 let g:ctrlp_lazy_update = 1
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/env/*
 
+" nerdtree
+map <leader>e :NERDTreeToggle<CR>
+map <leader>ge :NERDTreeFind<CR>
+let NERDTreeMinimalUI=1
+let NERDTreeDirArrows=1
+
 " Change where the tmp directory is
 set backupdir=~/tmp,/tmp
 set directory=~/tmp,/var/tmp,/tmp

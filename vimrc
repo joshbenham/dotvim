@@ -38,7 +38,7 @@ let g:mapleader = ","
 " ctrlp.vim
 let g:ctrlp_max_height = 16
 let g:ctrlp_lazy_update = 1
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/env/*
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/env/*,*.pyc
 
 " nerdtree
 map <leader>e :NERDTreeToggle<CR>

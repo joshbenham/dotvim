@@ -21,9 +21,9 @@ set mouse=a
 " Tab settings
 vnoremap < <gv
 vnoremap > >gv
-autocmd Filetype ruby setlocal et ts=4 sts=4 sw=4 expandtab
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType python setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype php setlocal ts=4 sts=4 sw=4 noexpandtab
-autocmd FileType python setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd FileType html setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd FileType css setlocal ts=4 sts=4 sw=4 noexpandtab

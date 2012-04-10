@@ -1,8 +1,13 @@
 call pathogen#infect()
 call pathogen#helptags()
 
-syntax on
 filetype plugin indent on
+
+" Setup color scheme
+set background=dark
+colorscheme jellybeans_joshbenham
+syntax enable
+set cursorline
 
 " Ignore case for search but enable smart search
 set ignorecase

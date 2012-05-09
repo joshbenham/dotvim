@@ -32,6 +32,7 @@ autocmd Filetype php setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd FileType html setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd FileType css setlocal ts=4 sts=4 sw=4 noexpandtab
+autocmd FileType markdown setlocal ts=2 sts=2 sw=2 expandtab
 
 " Always show the status line
 set laststatus=2

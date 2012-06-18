@@ -40,17 +40,6 @@ set laststatus=2
 let mapleader = ","
 let g:mapleader = ","
 
-" ctrlp.vim
-let g:ctrlp_max_height = 16
-let g:ctrlp_lazy_update = 1
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/env/*,*.pyc
-
-" nerdtree
-map <leader>e :NERDTreeToggle<CR>
-map <leader>ge :NERDTreeFind<CR>
-let NERDTreeMinimalUI=1
-let NERDTreeDirArrows=1
-
 " Change where the tmp directory is
 set backupdir=~/tmp,/tmp
 set directory=~/tmp,/var/tmp,/tmp
@@ -64,7 +53,54 @@ noremap <F2> :set mouse=<CR>
 noremap <F3> :set mouse=a<CR>
 nmap <F5> :source ~/.vimrc<CR>
 
+"------------------------------------------------------------
+" CtrlP
+"------------------------------------------------------------
+
+" Set the max files
+let g:ctrlp_max_files = 10000
+
+" Set the max height
+let g:ctrlp_max_height = 16
+
+" Set ctrlp to lazy update
+let g:ctrlp_lazy_update = 1
+
+" Ignore certain directories
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/env/*,*.pyc
+
+" Bind keys to trigger CtrlP
 noremap <leader>p :CtrlP<CR>
 noremap <leader>o :CtrlPBuffer<CR>
 
+" Optimize file searching
+if has("unix")
+    let g:ctrlp_user_command = {
+		\   'types': {
+		\       1: ['.git/', 'cd %s && git ls-files']
+		\   },
+		\   'fallback': 'find %s -type f | head -' . g:ctrlp_max_files
+		\ }
+endif
+
+"------------------------------------------------------------
+" Nerdtree
+"------------------------------------------------------------
+
+" Set the max files
+let g:ctrlp_max_files = 10000
+
+" Bind keys to trigger Nerdtree
+map <leader>e :NERDTreeToggle<CR>
+map <leader>ge :NERDTreeFind<CR>
+
+" Give nerd tree minimal UI
+let NERDTreeMinimalUI=1
+let NERDTreeDirArrows=1
+
+"------------------------------------------------------------
+" Syntastic
+"------------------------------------------------------------
+
+" Bind keys to trigger Syntastic
 noremap <leader>s :SyntasticCheck<CR>

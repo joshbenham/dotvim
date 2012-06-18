@@ -102,5 +102,11 @@ let NERDTreeDirArrows=1
 " Syntastic
 "------------------------------------------------------------
 
+" Create a list window showing errors
+let g:syntastic_auto_loc_list=1      
+
+" Auto jump to the first error
+let g:syntastic_auto_jump=1   
+
 " Bind keys to trigger Syntastic
 noremap <leader>s :SyntasticCheck<CR>

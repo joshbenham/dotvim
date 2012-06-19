@@ -22,6 +22,7 @@ set scrolloff=3
 set number
 set nowrap
 set mouse=a
+set backspace=indent,eol,start
 
 " Tab settings
 vnoremap < <gv

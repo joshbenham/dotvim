@@ -19,12 +19,23 @@ set hlsearch
 
 set smartindent
 set scrolloff=3
+
+" Enable line numbering
 set number
+
+" Disable line wrapping
 set nowrap
+
+" Allow mouse click to change cursor position
 set mouse=a
+
+" Default backspace to fix an osx issue
 set backspace=indent,eol,start
 
-" Tab settings
+" Bind escape to jj in insert mode
+inoremap jj <esc>
+
+" Bind shift[<,>] to tab multiple lines
 vnoremap < <gv
 vnoremap > >gv
 

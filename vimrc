@@ -1,7 +1,7 @@
 call pathogen#infect()
 call pathogen#helptags()
 
-filetype plugin indent on
+filetype plugin on
 
 " Setup color scheme
 set background=dark
@@ -28,9 +28,6 @@ set nowrap
 
 " Allow mouse click to change cursor position
 set mouse=a
-
-" Default backspace to fix an osx issue
-set backspace=indent,eol,start
 
 " Bind escape to jj in insert mode
 inoremap jj <esc>

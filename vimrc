@@ -29,6 +29,9 @@ set nowrap
 " Allow mouse click to change cursor position
 set mouse=a
 
+" Set backspace to work for indent,eol,start 
+set backspace=2
+
 " Bind escape to jj in insert mode
 inoremap jj <esc>
 

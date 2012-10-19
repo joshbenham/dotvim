@@ -82,6 +82,10 @@ highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
 match ExtraWhitespace /\s\+$/
 autocmd BufWritePre * :%s/\s\+$//e
 
+" Add rules (7.3+)
+set colorcolumn=72,79
+hi ColorColumn ctermbg=233
+
 "------------------------------------------------------------
 " CtrlP
 "------------------------------------------------------------

@@ -29,7 +29,7 @@ set nowrap
 " Allow mouse click to change cursor position
 set mouse=a
 
-" Set backspace to work for indent,eol,start 
+" Set backspace to work for indent,eol,start
 set backspace=2
 
 " Bind escape to jj in insert mode
@@ -64,6 +64,23 @@ noremap <F1> :set nonumber!<CR>
 noremap <F2> :set mouse=<CR>
 noremap <F3> :set mouse=a<CR>
 nmap <F5> :source ~/.vimrc<CR>
+
+" Split windows
+nnoremap <leader>w <C-w>v<C-w>l
+nnoremap <leader>q <C-w>s<C-w>j
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <C-S-h> <C-w><S-h>
+nnoremap <C-S-j> <C-w><S-j>
+nnoremap <C-S-k> <C-w><S-k>
+nnoremap <C-S-l> <C-w><S-l>
+
+" Handle whitespace
+highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
+match ExtraWhitespace /\s\+$/
+autocmd BufWritePre * :%s/\s\+$//e
 
 "------------------------------------------------------------
 " CtrlP
@@ -115,10 +132,10 @@ let NERDTreeDirArrows=1
 "------------------------------------------------------------
 
 " Create a list window showing errors
-let g:syntastic_auto_loc_list=1      
+let g:syntastic_auto_loc_list=1
 
 " Auto jump to the first error
-let g:syntastic_auto_jump=1   
+let g:syntastic_auto_jump=1
 
 " Bind keys to trigger Syntastic
 noremap <leader>s :SyntasticCheck<CR>

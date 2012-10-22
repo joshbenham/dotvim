@@ -31,7 +31,7 @@ $ ln -s ~/.vim/autoload/vim-pathogen/autoload/pathogen.vim ~/.vim/autoload/patho
 $ ln -s ~/.vim/vimrc ~/.vimrc
 
 # install jedi to use with jedi-vim
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 Remove (At your own risk!)

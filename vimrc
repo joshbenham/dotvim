@@ -86,6 +86,12 @@ autocmd BufWritePre * :%s/\s\+$//e
 set colorcolumn=72,79
 hi ColorColumn ctermbg=233
 
+" Popup menu
+set completeopt+=menuone
+set completeopt+=longest
+
+set pumheight=12
+
 "------------------------------------------------------------
 " CtrlP
 "------------------------------------------------------------

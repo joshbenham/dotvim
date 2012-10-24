@@ -76,10 +76,6 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-nnoremap <C-S-h> <C-w><S-h>
-nnoremap <C-S-j> <C-w><S-j>
-nnoremap <C-S-k> <C-w><S-k>
-nnoremap <C-S-l> <C-w><S-l>
 
 " Handle whitespace
 highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen

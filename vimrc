@@ -28,7 +28,10 @@ set nowrap
 
 " Allow mouse click to change cursor position
 set mouse=a
+
+" Set up the default mouse events and drawings
 set ttymouse=xterm2
+set ttyfast
 
 " Set backspace to work for indent,eol,start
 set backspace=2

@@ -28,6 +28,7 @@ set nowrap
 
 " Allow mouse click to change cursor position
 set mouse=a
+set ttymouse=xterm2
 
 " Set backspace to work for indent,eol,start
 set backspace=2

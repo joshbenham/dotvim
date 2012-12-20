@@ -5,6 +5,7 @@ filetype plugin on
 
 " Setup color scheme
 set background=dark
+set t_Co=256
 colorscheme jellybeans_joshbenham
 syntax enable
 set cursorline

@@ -4,10 +4,11 @@ call pathogen#helptags()
 filetype plugin on
 
 " Setup color scheme
-set background=dark
-set t_Co=256
-colorscheme jellybeans_joshbenham
 syntax enable
+set t_Co=256
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors=256
 set cursorline
 
 " Ignore case for search but enable smart search
@@ -85,7 +86,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Add rules (7.3+)
 set colorcolumn=72,79
-hi ColorColumn ctermbg=233
 
 " Popup menu
 set completeopt+=menuone

@@ -28,3 +28,6 @@
 [submodule "bundle/vim-twig"]
 	path = bundle/vim-twig
 	url = https://github.com/beyondwords/vim-twig.git
+[submodule "/Users/user/.vim/bundle/vim-colors-solarized"]
+	path = /Users/user/.vim/bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git

@@ -17,7 +17,7 @@ $ mv ~/.vim ~/.vim-bak
 $ mv ~/.vimrc ~/.vimrc-bak
 
 # grab the repo
-$ git clone git://github.com/joshbenham/dotvim ~/.vim
+$ git clone https://github.com/joshbenham/dotvim.git ~/.vim
 
 # pull down the submodule files
 $ cd ~/.vim

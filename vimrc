@@ -85,7 +85,9 @@ match ExtraWhitespace /\s\+$/
 autocmd BufWritePre * :%s/\s\+$//e
 
 " Add rules (7.3+)
-set colorcolumn=72,79
+if exists('+colorcolumn')
+	set colorcolumn=72,79
+endif
 
 " Popup menu
 set completeopt+=menuone

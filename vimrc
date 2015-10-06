@@ -9,6 +9,9 @@ call plug#begin('~/.vim/plugged')
     " Only call when editing Vala
     Plug 'rainux/vim-vala', { 'for': 'vala' }
 
+    " Only call when editing Blade
+    Plug 'xsbeats/vim-blade', { 'for': 'blade' }
+
 call plug#end()
 
 filetype plugin on

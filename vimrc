@@ -1,13 +1,23 @@
 call pathogen#infect()
 call pathogen#helptags()
 
+call plug#begin('~/.vim/plugged')
+
+    " Only call when NERDTreeToggle has been called
+    Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+    " Only call when editing Vala
+    Plug 'rainux/vim-vala', { 'for': 'vala' }
+
+call plug#end()
+
 filetype plugin on
 
 " Setup color scheme
 syntax enable
 set t_Co=256
 set background=dark
-colorscheme solarized
+colorscheme jellybeans_joshbenham
 let g:solarized_termcolors=256
 set cursorline
 

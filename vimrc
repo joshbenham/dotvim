@@ -12,6 +12,9 @@ call plug#begin('~/.vim/plugged')
     " Only call when editing Blade
     Plug 'xsbeats/vim-blade', { 'for': 'blade' }
 
+    " Only call when editing Less
+    Plug 'groenewege/vim-less', { 'for': 'less' }
+
 call plug#end()
 
 filetype plugin on

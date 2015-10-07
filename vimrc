@@ -18,6 +18,9 @@ call plug#begin('~/.vim/plugged')
     " Only call when editing Twig
     Plug 'beyondwords/vim-twig', { 'for': 'twig' }
 
+    " Only call when editing Markdown
+    Plug 'tpope/vim-markdown', { 'for': 'markdown' }
+
 call plug#end()
 
 filetype plugin on

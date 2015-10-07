@@ -4,8 +4,12 @@ call pathogen#helptags()
 call plug#begin('~/.vim/plugged')
 
     Plug 'bling/vim-airline'
-    Plug 'chriskempson/base16-vim'
     Plug 'tpope/vim-fugitive'
+
+    " Themes
+    Plug 'chriskempson/base16-vim'
+    Plug 'ajh17/Spacegray.vim'
+    Plug 'altercation/vim-colors-solarized'
 
     " Only call when NERDTreeToggle has been called
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -33,7 +37,10 @@ filetype plugin on
 syntax enable
 set t_Co=256
 set background=dark
-colorscheme base16-default
+" colorscheme solarized
+" let g:solarized_termcolors=256
+" colorscheme spacegray
+colorscheme base16-ocean
 let base16colorspace=256
 set cursorline
 

@@ -15,6 +15,9 @@ call plug#begin('~/.vim/plugged')
     " Only call when editing Less
     Plug 'groenewege/vim-less', { 'for': 'less' }
 
+    " Only call when editing Twig
+    Plug 'beyondwords/vim-twig', { 'for': 'twig' }
+
 call plug#end()
 
 filetype plugin on

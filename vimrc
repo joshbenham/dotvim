@@ -3,13 +3,15 @@ call pathogen#helptags()
 
 call plug#begin('~/.vim/plugged')
 
-    Plug 'bling/vim-airline'
-    Plug 'tpope/vim-fugitive'
-
     " Themes
     Plug 'chriskempson/base16-vim'
     Plug 'ajh17/Spacegray.vim'
     Plug 'altercation/vim-colors-solarized'
+
+    " Always loaded plugins
+    Plug 'bling/vim-airline'
+    Plug 'tpope/vim-fugitive'
+
 
     " Only call when NERDTreeToggle has been called
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }

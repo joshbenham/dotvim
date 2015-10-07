@@ -3,6 +3,8 @@ call pathogen#helptags()
 
 call plug#begin('~/.vim/plugged')
 
+    Plug 'bling/vim-airline'
+
     " Only call when NERDTreeToggle has been called
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
@@ -148,11 +150,10 @@ if has("unix")
 endif
 
 "------------------------------------------------------------
-" Powerline
+" Airline
 "------------------------------------------------------------
 
-" Allow for fancy symbols
-let g:Powerline_symbols = 'fancy'
+let g:airline_theme='base16'
 
 "------------------------------------------------------------
 " Nerdtree

@@ -4,6 +4,7 @@ call pathogen#helptags()
 call plug#begin('~/.vim/plugged')
 
     Plug 'bling/vim-airline'
+    Plug 'chriskempson/base16-vim'
 
     " Only call when NERDTreeToggle has been called
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -31,8 +32,8 @@ filetype plugin on
 syntax enable
 set t_Co=256
 set background=dark
-colorscheme jellybeans_joshbenham
-let g:solarized_termcolors=256
+colorscheme base16-default
+let base16colorspace=256
 set cursorline
 
 " Ignore case for search but enable smart search

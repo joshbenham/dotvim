@@ -36,7 +36,6 @@ call plug#end()
 filetype plugin on
 
 " Setup color scheme
-syntax enable
 set t_Co=256
 set background=dark
 " colorscheme solarized

@@ -11,6 +11,7 @@ call plug#begin('~/.vim/plugged')
     " Always loaded plugins
     Plug 'bling/vim-airline'
     Plug 'tpope/vim-fugitive'
+    Plug 'scrooloose/syntastic'
 
 
     " Only call when NERDTreeToggle has been called

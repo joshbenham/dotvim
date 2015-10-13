@@ -10,6 +10,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'scrooloose/syntastic'
 
+    " Set up fzf
+    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+    Plug 'junegunn/fzf.vim'
 
     " Only call when NERDTreeToggle has been called
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -129,6 +132,15 @@ set pumheight=12
 
 " Ignore certain directories
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/env/*,*.pyc
+
+"------------------------------------------------------------
+" FZF
+"------------------------------------------------------------
+
+nnoremap <silent> <Leader>p        :Files<CR>
+nnoremap <silent> <Leader>C        :Colors<CR>
+nnoremap <silent> <Leader><Enter>  :Buffers<CR>
+nnoremap <silent> <Leader>ag       :Ag <C-R><C-W><CR>
 
 "------------------------------------------------------------
 " Airline

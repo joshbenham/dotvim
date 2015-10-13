@@ -130,35 +130,8 @@ set completeopt+=longest
 
 set pumheight=12
 
-"------------------------------------------------------------
-" CtrlP
-"------------------------------------------------------------
-
-" Set the max files
-let g:ctrlp_max_files = 10000
-
-" Set the max height
-let g:ctrlp_max_height = 16
-
-" Set ctrlp to lazy update
-let g:ctrlp_lazy_update = 1
-
 " Ignore certain directories
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/env/*,*.pyc
-
-" Bind keys to trigger CtrlP
-noremap <leader>p :CtrlP<CR>
-noremap <leader>o :CtrlPBuffer<CR>
-
-" Optimize file searching
-if has("unix")
-    let g:ctrlp_user_command = {
-		\   'types': {
-		\       1: ['.git/', 'cd %s && git ls-files']
-		\   },
-		\   'fallback': 'find %s -type f | head -' . g:ctrlp_max_files
-		\ }
-endif
 
 "------------------------------------------------------------
 " Airline
@@ -169,9 +142,6 @@ let g:airline_theme='base16'
 "------------------------------------------------------------
 " Nerdtree
 "------------------------------------------------------------
-
-" Set the max files
-let g:ctrlp_max_files = 10000
 
 " Bind keys to trigger Nerdtree
 map <leader>e :NERDTreeToggle<CR>

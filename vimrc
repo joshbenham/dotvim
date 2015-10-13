@@ -1,6 +1,3 @@
-call pathogen#infect()
-call pathogen#helptags()
-
 call plug#begin('~/.vim/plugged')
 
     " Themes

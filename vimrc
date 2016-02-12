@@ -6,7 +6,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'altercation/vim-colors-solarized'
 
     " Always loaded plugins
-    Plug 'bling/vim-airline'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
     Plug 'tpope/vim-fugitive'
     Plug 'scrooloose/syntastic'
 

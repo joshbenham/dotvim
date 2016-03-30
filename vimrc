@@ -4,12 +4,15 @@ call plug#begin('~/.vim/plugged')
     Plug 'chriskempson/base16-vim'
     Plug 'ajh17/Spacegray.vim'
     Plug 'altercation/vim-colors-solarized'
+    Plug 'vim-airline/vim-airline-themes'
 
     " Always loaded plugins
     Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
     Plug 'tpope/vim-fugitive'
+    Plug 'airblade/vim-gitgutter'
     Plug 'scrooloose/syntastic'
+    Plug 'junegunn/goyo.vim'
+    Plug 'junegunn/limelight.vim'
 
     " Set up fzf
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
@@ -148,6 +151,42 @@ nnoremap <silent> <Leader>ag       :Ag <C-R><C-W><CR>
 "------------------------------------------------------------
 
 let g:airline_theme='base16'
+
+"------------------------------------------------------------
+" Goyo + Limelight
+"------------------------------------------------------------
+"
+
+let g:limelight_paragraph_span = 1
+let g:limelight_priority = -1
+
+function! s:goyo_enter()
+  if has('gui_running')
+    set fullscreen
+    set background=light
+    set linespace=7
+  elseif exists('$TMUX')
+    silent !tmux set status off
+  endif
+  " hi NonText ctermfg=101
+  Limelight
+endfunction
+
+function! s:goyo_leave()
+  if has('gui_running')
+    set nofullscreen
+    set background=dark
+    set linespace=0
+  elseif exists('$TMUX')
+    silent !tmux set status on
+  endif
+  Limelight!
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
+
+nnoremap <leader>g :Goyo<CR>
 
 "------------------------------------------------------------
 " Nerdtree
